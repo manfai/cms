@@ -7,6 +7,9 @@ class AdminController extends Controller {
     public function index() {
         return view('cms::pages.dashboard');
     }
+    public function settings() {
+        return view('cms::pages.settings');
+    }
 
     public function show() {
         //

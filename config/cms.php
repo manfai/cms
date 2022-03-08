@@ -2,5 +2,7 @@
 # laravel_cms.php
 
 return [
-    'Title' => 'MANFAI.ME',
+    'title' => 'MANFAI.ME',
+    'prefix' => 'backend',
+    'logo'  => ''
 ];

@@ -1,21 +1,31 @@
 {
-    "name": "m4nf41/laravel-cms",
-    "description": "a laravel based cms was designed by m4nf41",
+    "name": "manfai/cms",
+    "description": "a laravel based cms was designed by manfai",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "M4nf41\\LaravelCms\\": "src/"
+            "ManFai\\Cms\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "manfai",
+            "name": "ManFai",
             "email": "iam@manfai.me"
         }
     ],
     "require": {
         "php": ">=7.3",
         "laravel/framework": "^7.0|^8.0",
-        "livewire/livewire": "^2.10",
-        "guzzlehttp/guzzle": "^6.3"
+        "livewire/livewire": "^2.10"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ManFai\\Cms\\CmsServiceProvider"
+            ],
+            "aliases": {
+                "Cms":  "ManFai\\Cms\\CmsFacade"
+            }
+        }
     }
 }
